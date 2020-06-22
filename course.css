@@ -1,0 +1,415 @@
+.preload{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(5, 84, 90, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.1s ease;
+}
+.astro{
+    height: 200px;
+    animation: astroo 1s ease-in-out infinite;
+}
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+
+}
+@keyframes astroo{
+    from{
+        transform: translateY(0px);
+    } 
+
+    to{
+        transform: translateY(50px);
+    }
+
+}
+
+svg{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display:inline-block;
+}
+
+
+
+.banner .jumbotron{
+    
+    height: 100%;
+    padding: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(35deg, rgb(240, 236, 8),rgb(255, 153, 0))
+ 
+
+}
+.banner .jumbotron .gap{
+    margin-top: 50px;
+}
+.banner .jumbotron .card{
+    
+    
+}
+
+
+.banner2 .jumbotron{
+    
+    height: 100%;
+    padding: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(35deg, rgb(240, 8, 240),rgb(153, 0, 255))
+ 
+
+}
+.banner2 .jumbotron .gap{
+    margin-top: 50px;
+}
+.banner .jumbotron .card{
+    
+    
+}
+
+.banner3 .jumbotron{
+    
+    height: 100%;
+    padding: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(35deg, rgb(8, 240, 132),rgb(0, 255, 85))
+ 
+
+}
+.banner3 .jumbotron .gap{
+    margin-top: 50px;
+}
+.banner .jumbotron .card{
+    
+    
+}
+
+.share{
+    color: black;
+    
+}
+.share:hover{
+    border-radius: 50%;
+}
+
+.what-lrn{
+    margin-bottom: 100px;
+}
+.what-lrn .container{
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow:  0 10px 20px -5px rgba(115, 133, 128, 0.87);
+    background-color: #fff8e1;
+}
+.what-lrn .container h3{
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+.what-lrn ol{
+    list-style-type: circle;
+}
+.what-lrn ol li{
+    line-height: 2em;
+    
+}
+.cont{
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+.head{
+    font-size: x-large;
+    font-weight: 500;
+}
+.hylts{
+    list-style: disc;
+    font-size: 15px;
+}
+.hylts li{
+    padding-bottom: 10px;
+    font-weight: 400;
+    
+}
+.incl{
+    list-style: none;
+}
+.incl li{
+    margin: 0;
+    
+    padding-bottom: 10px;
+}
+.incl img{
+    margin-right: 5px;
+    width: 1em;
+}
+
+/*TAbs*/
+.t-h {
+    overflow: hidden;
+    margin-bottom: 500px;
+    border: 1px solid black;
+    box-shadow:  0 10px 20px -5px rgba(115, 133, 128, 0.87);
+    background-color: #fff;
+    
+    
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+ [data-tab-content]{
+     display: none;
+ }
+
+ .active[data-tab-content]{
+     display: block;
+ }
+
+ .tabs{
+
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border-bottom: 1px solid rgb(158, 149, 149);
+
+ }
+
+ .tab{
+     cursor: pointer;
+     padding: 10px;
+     margin: 10px;
+     width: 100%;
+     border-radius: 5px;
+     text-align: center;
+     transition: 0.3s;
+     font-size: x-large;
+     font-weight: bold;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+ }
+ @media (min-width: 481px) and (max-width: 767px) {
+    .tab{
+        cursor: pointer;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        border-radius: 5px;
+        transition: 0.3s;
+        font-size: larger;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    }
+    
+    
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    .tab{
+        cursor: pointer;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        border-radius: 5px;
+        transition: 0.3s;
+        font-size: large;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    }
+    
+    
+  }
+ 
+ .tab.active{
+     background-color: rgb(102, 227, 243);
+ }
+ .tab:hover{
+     background:linear-gradient(65deg, #64ffda,#76ff03);
+ }
+
+ .tab-content{
+     transition: 0.3s;
+ }
+
+ /*rating*/
+ .rat{
+    color:black;
+ }
+
+ .rat li{
+     margin: 20px 0;
+     list-style-type: none;
+ }
+ .bar{
+     background: #353b48;
+     display: block;
+     height: 30px;
+     border: 1px solid rgba(0, 0, 0, 0.3);
+     border-radius: 3px;
+     overflow: hidden;
+     box-shadow: 0 0 10px #2187e7b3;
+
+
+ }
+ .bar span{
+     height: 28px;
+     float: left;
+     background: gold;
+ }
+ .rat-5{
+     width: 50%;
+     animation: rat-5 5s;
+ }
+ @keyframes rat-5{
+     0%{
+         width: 0;
+     }
+     25%{
+         width: 25%;
+     }
+     35%{
+         width: 90%;
+     }
+     50%{
+         width: 50%;
+     }
+     60%{
+         width: 40%;
+     }
+    
+     85%{
+         width: 10%;
+     }
+     90%{
+         width:55%;
+     }
+     100%{
+         width: 100%;
+     }
+
+ }
+ .rat-4{
+    width: 70%;
+    animation: rat-5 5s;
+}
+.rat-3{
+    width: 12%;
+    animation: rat-5 5s;
+}
+.rat-2{
+    width: 10%;
+    animation: rat-5 5s;
+}
+.rat-1{
+    width: 2%;
+    animation: rat-5 5s;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.acco{
+    margin-bottom: 200px;
+}
+.accordion {
+    background :rgba(235, 233, 229, 0.836);
+    color: black;
+    cursor: pointer;
+    
+    padding: 18px;
+    width: 100%;
+    border: 1px solid black;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    animation: an 3s;
+  }
+  
+  @keyframes an{
+      0%{
+        background :linear-gradient(37deg,
+        #90caf9,#8ff494);
+        
+      }
+      25%{
+          
+        background :linear-gradient(65deg,
+        #90f9e2,#f4d18f);
+    
+      }
+      50%{
+        background :linear-gradient(65deg,
+        #a6aaad,#f48fb1);
+      }
+      75%{
+        background :linear-gradient(65deg,
+        #f990f4,#56c1d4);
+    }
+      100%{
+        background :whitesmoke;
+      }
+
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .acctive, .accordion:hover {
+    background-color:white;
+  }
+
+  .accordion:after {
+    content: '+'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: blue;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .acctive:after {
+    content: "-"; /* Unicode character for "minus" sign (-) */
+    color: blue;
+    background-color: ;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+  
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  }
+
+  
+   .panel ol li{
+       list-style: none ;
+       line-height: 50px;
+       text-decoration: none;
+       border-bottom: 1px solid rgb(117, 113, 113);
+       
+       
+  }
+  .panel ol li a{
+      text-decoration: none;
+      color: black;
+  }
+  .panel ol li a:hover{
+      color: #3479e0;
+  }
+ 

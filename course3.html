@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Django Beginners course</title>
+    <link class="top" style="height:10px;" rel="icon" href="BUDDY BG.jpg">
+
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="course.css">
+</head>
+
+<body>
+    <div class="preload">
+        <svg version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+            <circle fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="15" stroke-dasharray="14.2472,14.2472"
+                cx="50" cy="50" r="47">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="5s" from="0 50 50"
+                    to="360 50 50" repeatCount="indefinite" />
+            </circle>
+            <circle fill="none" stroke="#fff" stroke-width="1" stroke-miterlimit="10" stroke-dasharray="10,10" cx="50"
+                cy="50" r="39">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="5s" from="0 50 50"
+                    to="-360 50 50" repeatCount="indefinite" />
+            </circle>
+            <g fill="#fff">
+                <rect x="30" y="35" width="5" height="30">
+                    <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5"
+                        repeatCount="indefinite" begin="0.1" />
+                </rect>
+                <rect x="40" y="35" width="5" height="30">
+                    <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5"
+                        repeatCount="indefinite" begin="0.2" />
+                </rect>
+                <rect x="50" y="35" width="5" height="30">
+                    <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5"
+                        repeatCount="indefinite" begin="0.3" />
+                </rect>
+                <rect x="60" y="35" width="5" height="30">
+                    <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5"
+                        repeatCount="indefinite" begin="0.4" />
+                </rect>
+                <rect x="70" y="35" width="5" height="30">
+                    <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5"
+                        repeatCount="indefinite" begin="0.5" />
+                </rect>
+            </g>
+        </svg>
+
+    </div>
+    <nav style="background-color: transparent;" class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">
+  
+          <img src="BUDDY BG.svg" height="70px" width="70px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="banner3">
+        <div class="jumbotron fluid-jumbotron">
+            <div class="row">
+                <div class="col-sm-8 gap">
+                    <h1>Django Beginners</h1>
+                    <p>Create awesome JavaScript driven web apps with modern JavaScript from the very beginning right
+                        through to ninja-level.</p>
+                    <p>Instructor: <em>Adarsh</em> <span style="float: right;">Medium: <em>English</em></span></p>
+                    <p>Course Level: Intermediate <span style="float:right;"> Duration: 30 <em>hours</em></span></p>
+                    <button class="btn  btn-outline-success share"><i class="fas fa-share"></i></button>
+
+
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="crd">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tUqUdu0Sjyc";
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-rupee-sign"></i>500</h5>
+
+                                <a href="#" class="btn btn-outline-success">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="what-lrn">
+        <div class="container">
+            <h3>What you will learn</h3>
+            <div class="row">
+                <div class="col">
+                    <ol>
+                        <li>Learn how to program with modern JavaScript, from the very beginning to more advanced topics
+                        </li>
+                        <li>Learn how to create real-world front-end applications with JavaScript (quizes, weather apps,
+                            chat rooms etc)</li>
+                        <li>Explore API's to make the most of third-party data (such as weather information)</li>
+                    </ol>
+                </div>
+                <div class="col">
+                    <ol>
+                        <li>Learn all about OOP (object-oriented programming) with JavaScript, working with prototypes &
+                            classes</li>
+                        <li>Learn how to make useful JavaScript driven UI components like popups, drop-downs, tabs,
+                            tool-tips & more.</li>
+                        <li>Learn how to use real-time databases to store, retrieve and update application data</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Requirments</div>
+                    <div class="card-body text-dark">
+                        <ul>
+                            <li class="card-text">A basic grasp of HTML & CSS (how to create simple, static web pages)
+                            </li>
+                            <li class="card-text">Please try to code on your workspace as you follow up</li>
+                            <li class="card-text"> <em>A will to learn</em> </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-center">
+                    <div class="card-header head">
+                        Highlights
+                    </div>
+
+
+                    <div class="card-body text-left ">
+                        <ul class="hylts">
+                            <li class="card-text">Covering JavaScript basics</li>
+                            <li class="card-text">Project-based learning approach</li>
+                            <li class="card-text">Basic and advance topics covered</li>
+                            <li class="card-text"> Expert Mentor guidance</li>
+                            <li class="card-text">Exellent doubt support</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card text-left" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">This course includes</h5>
+                        <ul class="incl">
+                            <li><img src="video.svg" alt=""> 19+ hours of video</li>
+                            <li> <img src="diary.svg" alt=""> 1 downloadable resource</li>
+                            <li><img src="mass-media.svg" alt=""> Full lifetime access</li>
+                            <li><img src="mass-media (1).svg" alt=""> Access on mobile and TV</li>
+                            <li><img src="certificate.svg" alt=""> Certificate of Completion</li>
+                        </ul>
+
+                        <a href="#" class="btn btn-danger">Start Now <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container acco">
+        <h2>Course Content</h2>
+        <button class="accordion" style="border-top: 1px solid black;">Course introduction</button>
+        <div class="panel">
+           <ol>
+               <li><a href="http://" target="_blank" rel="noopener noreferrer">Welcome</a> </li>
+               <li><a href="http://" target="_blank" rel="noopener noreferrer">READ BEFORE YOU START!</a></li>
+               <li><a href="http://" target="_blank" rel="noopener noreferrer">Setting up Our Tools</a></li>
+               
+           </ol>
+        </div>
+
+        <button class="accordion"   style="border-top: 1px solid black;">Javascript Language</button>
+        <div class="panel">
+            <ol>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Welcome</a> </li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">READ BEFORE YOU START!</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Setting up Our Tools</a></li>
+                
+            </ol>
+        </div>
+
+        <button class="accordion"  style="border-top: 1px solid black;">DOM manipulation</button>
+        <div class="panel">
+            <ol>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Welcome</a> </li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">READ BEFORE YOU START!</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Setting up Our Tools</a></li>
+                
+            </ol>
+        </div>
+
+        <button class="accordion"   style="border-top: 1px solid black;">Variable Declarations with let and const</button>
+        <div class="panel">
+            <ol>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Welcome</a> </li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">READ BEFORE YOU START!</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Setting up Our Tools</a></li>
+                
+            </ol>
+        </div>
+
+        <button class="accordion"  style="border-top: 1px solid black;">Classes with Subclasses</button>
+        <div class="panel">
+            <ol>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Welcome</a> </li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">READ BEFORE YOU START!</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Setting up Our Tools</a></li>
+                
+            </ol>
+        </div>
+
+        <button class="accordion"   style="border-top: 1px solid black;">30 Questions to Test Your JavaScript Knowledge</button>
+        <div class="panel">
+            <ol>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Welcome</a> </li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">READ BEFORE YOU START!</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Setting up Our Tools</a></li>
+                
+            </ol>
+        </div>
+
+    </div>
+    
+
+
+    <div class="container t-h ">
+        <ul class="tabs">
+            <li data-tab-target="#about" class="active tab">About</li>
+            <li data-tab-target="#feedback" class="tab">Feedbacks</li>
+            <li data-tab-target="#rating" class=" tab">Rating</li>
+        </ul>
+
+
+        <div class="tab-content">
+            <div id="about" data-tab-content class="active">
+                <h1>About Author</h1>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p><img class="card-img"
+                                src="https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                            <h4>John Doe</h4>
+                            <h6>Rating: 4.5/5</h6>
+                        </p>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="card-text">Hi, I'm Jonas! I have been identified as one of Udemy's Top Instructors and
+                            all my premium courses have recently earned the best-selling status for outstanding
+                            performance and student satisfaction.
+
+                            I'm a full-stack web developer and designer with a passion for building beautiful things
+                            from scratch. I've been building websites and apps since 2007 and also have a Master's
+                            degree in Engineering.
+
+                            It was in college where I first discovered my passion for teaching and helping others by
+                            sharing all I knew. And that passion brought me to Udemy in 2015, where my students love the
+                            fact that I take the time to explain important concepts in a way that everyone can easily
+                            understand.
+
+                        </p>
+                        <button class="btn btn-outline-primary">Know more</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="feedback" data-tab-content>
+                <h1>Featured Review</h1>
+                <div class="card-columns">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title that wraps to a new line</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <blockquote class="blockquote mb-0 card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card bg-primary text-white text-center p-3">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                            <footer class="blockquote-footer text-white">
+                                <small>
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center">
+                        <img src="https://images.unsplash.com/photo-1586297098710-0382a496c814?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Card title</h5>
+
+                            <p class="card-text">This card has a regular title and short paragraphy of text below it.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1575632312417-71da8ed4992d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card p-3 text-right">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is another card with title and supporting text below. This card
+                                has some additional content to make it slightly taller overall.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="rating" data-tab-content>
+                <h1>Rating</h1>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card border-success mb-3" style="max-width: 18rem; margin-top: 25px;
+                        margin-left: 15px;">
+                            <div class="card-header">
+                                <h3 style="text-align: center;">Course Review</h3>
+                            </div>
+                            <div class="card-body text-warning">
+                                <img src="writer.svg" class="card-img-top" alt="">
+                                <p class="card-text" style="text-align: center;">
+                                    <h1 style="text-align: center;"><em>4 <i class="fa fa-star"
+                                                aria-hidden="true"></i></em></h1>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 rat">
+                        <li>
+                            <h5> <em> Best Course</em></h5><span class="bar"><span class="rat-5"></span></span>
+                        </li>
+
+                        <li>
+                            <h5> <em> Great Concepts</em></h5><span class="bar"><span class="rat-4"></span></span>
+
+                        </li>
+
+                        <li>
+                            <h5> <em> Good Content</em></h5><span class="bar"><span class="rat-3"></span></span>
+                        </li>
+
+                        <li>
+                            <h5> <em> Good Mentor delivery</em></h5><span class="bar"><span class="rat-2"></span></span>
+                        </li>
+
+                        <li>
+                            <h5><em>No Opinion</em> </h5><span class="bar"><span class="rat-1"></span></span>
+                        </li>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+<script src="course.js"></script>
+
+</html>
