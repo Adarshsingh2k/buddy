@@ -21,6 +21,11 @@ scroll-behavior: smooth;
 
 }
 
+
+
+
+
+
 /*nav new*/
 
 
@@ -524,9 +529,21 @@ display: flex;
 	
 }
 
-	
-  
 
+.blog{
+	background-color: #a4152c;
+	height: 600px;
+	padding: 50px;
+	overflow-y: scroll;
+	
+}
+.u-ex{
+	border: #76ff03 solid 1px;
+	box-shadow: 2px 20px 20px -5px rgba(24, 26, 25, 0.87);;
+}
+.blog .row{
+	padding-bottom: 50px;
+}
 
 
 
