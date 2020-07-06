@@ -1,5 +1,54 @@
-header{
-    background-image: url(https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+.preload{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 254, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 10s ease;
+}
+
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+
+}
+svg {
+    display:block;
+    width:258px;
+    height:258px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  
+  .tree {
+    fill: #E73E0D;
+  }
+  
+  .circle-mask {
+    transform-origin: 50% 90%;
+    animation: scale 5s infinite ease-out;
+  }
+  
+  @keyframes scale {
+    0%, 100% {
+      transform: scale(0.0);
+    }
+    7%, 90% {
+      transform: scale(0.4);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+
+
+  .banner{
+    background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,59 +58,8 @@ header{
     padding-top: 50px;
     
     margin-bottom: 50px;
-    
-}
-.preload{
-    position: fixed;
-    top:0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(5, 84, 90, 0.322);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 1s ease;
-}
-.astro{
-    height: 200px;
-    animation: astroo 1s ease-in-out infinite;
-}
-.preload-finish{
-    opacity: 0;
-    pointer-events: none;
-
-}
-@keyframes astroo{
-    from{
-        transform: translateY(0px);
-    } 
-
-    to{
-        transform: translateY(50px);
-    }
-
-}
-
-svg{
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  display:inline-block;
-}
-.banner-2{
-    background-image: url(https://images.pexels.com/photos/3778615/pexels-photo-3778615.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55vh;
-    
-    margin-top: 50px;
-    padding-top: 50px;
-    
-    margin-bottom: 50px;
-}
-.cover{
+  }
+  .cover{
     background-color: #92999f9f;
     height: 35vh;
     
@@ -73,112 +71,12 @@ svg{
     
 
 }
-.specialization{
-    margin-top: 75px;
-    
-}
-.specialization .container .row{
-    padding: 30px;
-}
-.specialization .card-top{
-    background: linear-gradient(47deg,pink,white);
-     height: 150px; 
-     text-align: center;
-     padding: 15px;
-     border-top: 2px solid black;
-     
-     justify-content: center;
-     align-items: center;
-}
 
-
-
-
-.specialization .card-top:hover{
-    background: rgb(253, 253, 253);
-    border-top: 5px solid rgb(36, 187, 56);
-    box-shadow: 0 10px 20px -5px rgba(115, 133, 128, 0.87);
-}
-
-.specialization .card-top img{
-    width: 100px;
-    height: 100px;
-    float: right;
-}
-.specialization .card-top .card-title{
+.ab{
     margin-top: 50px;
 }
 
-
-
-.course-en{
-    margin-top:70px ;
-}
-.course-en h1{
-    text-align: center;
-}
-.course-en .container{
-    border-radius: 25px;
-    overflow-y: scroll;
-    height: 100vh;
-    background: linear-gradient(47deg, tomato,white);
-    padding: 25px;
-    box-shadow: 0 10px 20px -5px rgba(115, 133, 128, 0.87) ;
-}
-
-.course-en .container .row{
-    
-    padding-bottom: 50px;
-
-}
-.course-en .container .col-sm{
-    padding-bottom: 50px;
-}
-.course-en .card{
-    border-left: 2px black solid;
-}
-
-.course-en .card:hover{
-    border-left: 5px solid rgb(32, 167, 99);
-    box-shadow: 0 10px 20px -5px rgba(115, 133, 128, 0.87) ;
-    border-radius: 5px;
-}
-
-.course-ma{
-    margin-top:70px ;
-    margin-bottom: 70px;
-}
-.course-ma h1{
-    text-align: center;
-}
-.course-ma .container{
-    border-radius: 20px;
-    overflow-y: scroll;
-    height: 100vh;
-    background: linear-gradient(47deg, rgb(71, 255, 102),white);
-    padding: 25px;
-    box-shadow: 0 10px 20px -5px rgba(115, 133, 128, 0.87) ;
-}
-
-.course-ma .container .row{
-    
-    padding-bottom: 50px;
-
-}
-.course-ma .container .col-sm{
-    padding-bottom: 50px;
-}
-.course-ma .card{
-    border-left: 2px black solid;
-}
-
-.course-ma .card:hover{
-    border-left: 5px solid rgb(218, 205, 20);
-    
-    border-radius: 5px;
-}
-
-/**footer*/
+/*footeer*/
 .footer-distributed{
 	background: linear-gradient(57deg,#f44336,#76ff03);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -353,8 +251,120 @@ svg{
 	}
 
 }
-
-
+.team{
+    background-image: url(https://images.unsplash.com/photo-1508789071992-17afece129f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team h1{
+    text-align: center;
+    color: azure;
+}
+  
+ .our-team {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .our-team .picture {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+  
+  .our-team:hover .picture::before {
+    height: 100%;
+  }
+  
+  .our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .our-team .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+  
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+  }
+  
+  .our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+  }
+  
+  .our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .our-team:hover .social {
+    bottom: 0;
+  }
+  
+  .our-team .social li {
+    display: inline-block;
+  }
+  
+  .our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  .our-team .social li a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
+  }
+  
 
 
 
