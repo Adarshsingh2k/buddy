@@ -464,12 +464,12 @@ display: flex;
 	row-gap: 30px;
 }
 .grid .card:hover{
-	box-shadow: 0 10px 20px -5px rgba(115, 133, 128, 0.87);
+	
 	border: 5px solid lightblue;
 }
 .guide{
 	padding-top: 7px;
-	color: #92999f;
+	color: #9f2999f;
 }
 
 .grid .card i{
@@ -520,7 +520,7 @@ display: flex;
 
 .blog{
 	background-color: #a4152c;
-	height: 600px;
+	height: 100vh;
 	padding: 50px;
 	overflow-y: scroll;
 	margin-bottom: -350px;
