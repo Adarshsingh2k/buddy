@@ -1,0 +1,113 @@
+header{
+    background: linear-gradient(90deg,#9bf3f3,rgb(196, 214, 218) );
+    height: 50vh;
+}
+.banner-2{
+    background: linear-gradient(37deg,#9bf3b1,rgb(249, 251, 252) );
+    height: 50vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.specialization{
+    margin-top: 75px;
+    
+}
+.specialization .container .row{
+    padding: 30px;
+}
+.specialization .card-top{
+    background: linear-gradient(47deg,pink,white);
+     height: 150px; 
+     text-align: center;
+     padding: 15px;
+     border-top: 2px solid black;
+     
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+
+.specialization .card-top:hover{
+    background: rgb(253, 253, 253);
+    border-top: 5px solid rgb(36, 187, 56);
+    box-shadow: 0 10px 20px -5px rgba(115, 133, 128, 0.87);
+}
+
+.specialization .card-top img{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+.specialization .card-top .card-title{
+    margin-top: 50px;
+}
+
+
+
+.course-en{
+    margin-top:70px ;
+}
+.course-en h1{
+    text-align: center;
+}
+.course-en .container{
+    border-radius: 25px;
+    overflow-y: scroll;
+    height: 100vh;
+    background: linear-gradient(47deg, tomato,white);
+    padding: 25px;
+    box-shadow: 0 10px 20px -5px rgba(115, 133, 128, 0.87) ;
+}
+
+.course-en .container .row{
+    
+    padding-bottom: 50px;
+
+}
+.course-en .container .col-sm{
+    padding-bottom: 50px;
+}
+.course-en .card{
+    border-left: 2px black solid;
+}
+
+.course-en .card:hover{
+    border-left: 5px solid rgb(32, 167, 99);
+    box-shadow: 0 10px 20px -5px rgba(115, 133, 128, 0.87) ;
+    border-radius: 5px;
+}
+
+.course-ma{
+    margin-top:70px ;
+}
+.course-ma h1{
+    text-align: center;
+}
+.course-ma .container{
+    border-radius: 20px;
+    overflow-y: scroll;
+    height: 100vh;
+    background: linear-gradient(47deg, rgb(71, 255, 102),white);
+    padding: 25px;
+    box-shadow: 0 10px 20px -5px rgba(115, 133, 128, 0.87) ;
+}
+
+.course-ma .container .row{
+    
+    padding-bottom: 50px;
+
+}
+.course-ma .container .col-sm{
+    padding-bottom: 50px;
+}
+.course-ma .card{
+    border-left: 2px black solid;
+}
+
+.course-ma .card:hover{
+    border-left: 5px solid rgb(218, 205, 20);
+    
+    border-radius: 5px;
+}

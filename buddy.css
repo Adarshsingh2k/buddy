@@ -258,29 +258,7 @@ section{ display: flex;  }
 
 }
 
-.blogs{
-	margin-left: 43%;
-	color: beige;
-	padding-bottom: 10px;
-	font-family: 'Bungee Shade', cursive;
-	font-size: 45px;
-}
 
-
-
-.content{
-min-height: 70px;
-margin: 0 auto;
-background-color: black;
-padding-bottom: 50px;
-font-size: 50px;
-height: auto;
-margin-top: 100px;
-padding-top: 50px;
-padding-left: 10px;
-padding-right: 10px;
-
-}
 
 
 
@@ -326,9 +304,9 @@ padding-right: 10px;
 
 }
 
-  .container {
+  .featur .container {
 	overflow: hidden;}
-	.slider {
+	.featur .slider {
 	  animation: slidein 30s linear infinite;
 	  white-space: nowrap;}
 	  .logos {
@@ -340,7 +318,15 @@ padding-right: 10px;
 		  animation: fade-in 0.5s 
 			cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 		}
-	  
+		@media (min-width: 320px) and (max-width: 480px) {
+  
+		.featur{
+	margin: -500px;
+}
+
+			
+		  }
+		  
 	
   
   
@@ -537,6 +523,7 @@ display: flex;
 	height: 600px;
 	padding: 50px;
 	overflow-y: scroll;
+	margin-bottom: -350px;
 	
 }
 .u-ex{
@@ -555,7 +542,19 @@ display: flex;
 
 
 
+@media (min-width: 320px) and (max-width: 480px) {
   
+	.blog{
+	background-color: #a4152c;
+	height: 600px;
+	padding: 50px;
+	overflow-y: scroll;
+	margin-bottom: -350px;
+	
+}
+	
+
+  }
 
 
 
